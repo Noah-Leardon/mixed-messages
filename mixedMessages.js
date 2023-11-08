@@ -181,5 +181,6 @@ function createMessage() {
     return console.log(`${randomThing1} ${randomNoun1} ${randomVerb} ${randomPreposition} ${randomThing2} ${randomNoun2}.`)
 }
 
+console.log('Your unique message is:')
 
 createMessage()
