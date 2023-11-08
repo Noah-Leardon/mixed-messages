@@ -163,13 +163,22 @@ const nouns = [
     "for"
   ];
   
+const thing = [
+  'A',
+  'The',
+  'Sir',
+  'Madam'
+]
+
 function createMessage() {
     let randomNoun1 = nouns[Math.floor(Math.random() * nouns.length)]
     let randomNoun2 = nouns[Math.floor(Math.random() * nouns.length)]
     let randomVerb = verbs[Math.floor(Math.random() * verbs.length)]
     let randomPreposition = prepositions[Math.floor(Math.random() * prepositions.length)]
+    let randomThing1 = thing[Math.floor(Math.random() * thing.length)]
+    let randomThing2 = thing[Math.floor(Math.random() * thing.length)]
 
-    return console.log(`The ${randomNoun1} ${randomVerb} ${randomPreposition} the ${randomNoun2}.`)
+    return console.log(`${randomThing1} ${randomNoun1} ${randomVerb} ${randomPreposition} ${randomThing2} ${randomNoun2}.`)
 }
 
 
