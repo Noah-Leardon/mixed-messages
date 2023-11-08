@@ -135,6 +135,42 @@ const nouns = [
     "meditated"
   ];
   
+  const prepositions = [
+    "about",
+    "above",
+    "across",
+    "after",
+    "against",
+    "along",
+    "amid",
+    "around",
+    "as",
+    "at",
+    "before",
+    "behind",
+    "below",
+    "beneath",
+    "beside",
+    "between",
+    "beyond",
+    "but",
+    "by",
+    "concerning",
+    "despite",
+    "down",
+    "during",
+    "except",
+    "for"
+  ];
+  
+function createMessage() {
+    let randomNoun1 = nouns[Math.floor(Math.random() * nouns.length)]
+    let randomNoun2 = nouns[Math.floor(Math.random() * nouns.length)]
+    let randomVerb = verbs[Math.floor(Math.random() * verbs.length)]
+    let randomPreposition = prepositions[Math.floor(Math.random() * prepositions.length)]
 
-  
-  
+    return console.log(`The ${randomNoun1} ${randomVerb} ${randomPreposition} the ${randomNoun2}.`)
+}
+
+
+createMessage()
